@@ -1,3 +1,4 @@
+import { RevealOnScroll } from "../RevealOnScroll";
 
 export const About = () => {
   const frontendSkills = [
@@ -15,6 +16,7 @@ export const About = () => {
       id="about"
       className="min-h-screen flex items-center justify-center py-20"
     >
+      <RevealOnScroll>
         <div className="max-w-3xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
             {" "}
@@ -67,8 +69,8 @@ export const About = () => {
               <h3 className="text-xl font-bold mb-4"> 🏫 Education </h3>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li>
-                  <strong> M.S. in Information Technology </strong> - Deakin University
-                  (2024-2026)
+                  <strong> B.S. in Computer Science </strong> - XYZ University
+                  (2016-2020)
                 </li>
                 <li>
                   Relevant Coursework: Data Structures, Web Development, Cloud
@@ -82,7 +84,7 @@ export const About = () => {
                 <div>
                   <h4 className="font-semibold">
                     {" "}
-                    Software Engineer at Microchip Technology Inc (2022 - 2024){" "}
+                    Software Engineer at ABC Corp (2020 - Present){" "}
                   </h4>
                   <p>
                     Developed and maintained microservices for cloud-based
@@ -104,6 +106,7 @@ export const About = () => {
             </div>
           </div>
         </div>
+      </RevealOnScroll>
     </section>
   );
 };
